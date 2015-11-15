@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="icon" href="/favicon.ico?r=878" />
+<!-- injector:css -->
+<link rel="stylesheet" href="/js/lib/bootstrap-css-only/css/bootstrap.css">
+<link rel="stylesheet" href="/js/lib/angular-growl-v2/build/angular-growl.css">
+<link rel="stylesheet" href="/js/lib/components-font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="/js/lib/angular-ui-grid/ui-grid.css">
+<link rel="stylesheet" href="/js/lib/ngDialog/css/ngDialog.css">
+<link rel="stylesheet" href="/js/lib/ngDialog/css/ngDialog-theme-default.css">
+<link rel="stylesheet" href="/js/lib/angular-loading-bar/build/loading-bar.css">
+<link rel="stylesheet" href="/js/lib/angularjs-datepicker/dist/angular-datepicker.min.css">
+<!-- endinjector -->
+<!-- injector:js -->
+<script src="/js/lib/angular/angular.js"></script>
+<script src="/js/lib/ui-router/release/angular-ui-router.js"></script>
+<script src="/js/lib/ng-underscore/build/ng-underscore.js"></script>
+<script src="/js/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="/js/lib/angular-growl-v2/build/angular-growl.js"></script>
+<script src="/js/lib/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="/js/lib/angular-permission/dist/angular-permission.js"></script>
+<script src="/js/lib/angular-ui-grid/ui-grid.js"></script>
+<script src="/js/lib/ngDialog/js/ngDialog.js"></script>
+<script src="/js/lib/pdfmake/build/pdfmake.js"></script>
+<script src="/js/lib/pdfmake/build/vfs_fonts.js"></script>
+<script src="/js/lib/angular-loading-bar/build/loading-bar.js"></script>
+<script src="/js/lib/angularjs-datepicker/dist/angular-datepicker.min.js"></script>
+<script src="/js/app/app.js"></script>
+<!-- endinjector -->
+<body ng-app="mainApp">
+	<div growl></div>
+	<div class="container">
+		<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">Bank Name</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="active"><a href="#"><i class="icon-home icon-white"></i> Home</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+           <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+             <ul class="dropdown-menu">
+               <li><a href="#">Action</a></li>
+               <li><a href="#">Another action</a></li>
+               <li><a href="#">Something else here</a></li>
+               <li class="divider"></li>
+               <li class="nav-header">Nav header</li>
+               <li><a href="#">Separated link</a></li>
+               <li><a href="#">One more separated link</a></li>
+             </ul>
+          </li>
+        </ul>
+        <ul class="nav pull-right">
+          <li class="dropdown" id="menuLogin">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
+            <div class="dropdown-menu" style="padding:17px;">
+              <form class="form" id="formLogin"> 
+                <input name="username" id="username" type="text" placeholder="Username"> 
+                <input name="password" id="password" type="password" placeholder="Password"><br>
+                <button type="button" id="btnLogin" class="btn">Login</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+  </div><!-- /.navbar-inner -->
+</div><!-- /.navbar -->	
+		<!-- version footer -->
+	
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "banking",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "latest",
+    "ui-router": "latest",
+    "ng-underscore": "latest",
+    "bootstrap-css-only": "latest",
+    "angular-bootstrap": "latest",
+    "angular-growl-v2": "latest",
+    "angular-permission": "latest",
+    "components-font-awesome": "latest",
+    "angular-ui-grid": "3.*",
+    "ngDialog": "*",
+    "pdfmake": "*",
+    "angular-loading-bar": "*",
+    "angularjs-datepicker": "*"
+  },
+  "resolutions": {
+    "angular": "1.4.7"
+  }
+}
