@@ -6,7 +6,7 @@
     "ui-router": "latest",
     "ng-underscore": "latest",
     "bootstrap-css-only": "latest",
-    "angular-bootstrap": "latest",
+    "bootstrap": "latest",
     "angular-growl-v2": "latest",
     "angular-permission": "latest",
     "components-font-awesome": "latest",

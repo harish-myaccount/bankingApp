@@ -18,11 +18,29 @@ mainApp.config(function($stateProvider, $urlRouterProvider, ngDialogProvider) {
 
 	$urlRouterProvider.otherwise('/');
 
-	$stateProvider.state('index', {
+	var root = $stateProvider.state('app', {
 		url : '/',
-		template : "public-tmpl.html"
+		template:'<div ui-view />'
 	});
-
 	// HOME STATES AND NESTED VIEWS ========================================
 
+
+	root.state('app.user',{
+		url:'user',
+		template:'<div ui-view></div>'
+	}).state('app.user.accounts',{
+		url:'/accounts',
+		template:"public-tmpl.html"
+	});
+
 });
+
+
+mainApp.run(['$rootScope', '$state', 'Authentication', function($rootScope, $state, Authentication) {
+  $rootScope.$on('$stateChangeStart', function(e, to) {
+    var role;
+   
+
+    });
+  
+}]);
