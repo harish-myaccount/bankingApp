@@ -1,22 +1,28 @@
 package com.harish.assignment.model;
 
 import java.util.Date;
-import java.util.List;
+import java.util.Set;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import lombok.Data;
 
 @Entity
 @Table(name = "customers")
 @Data
-public class User {
+public class Customer {
 	@Id
 	private Long customerId;
+	
+	@JoinColumn(table="users",referencedColumnName="username")
+	private String userName;
 	
 	private String name;
 	
@@ -24,7 +30,7 @@ public class User {
 	
 	private Date lastLoggedIn;
 	
-	@OneToMany(targetEntity=Account.class, mappedBy="accountId", fetch=FetchType.EAGER)
-	private List<Account> accounts;
+	@OneToMany
+	private Set<Account> accounts;
 
 }
